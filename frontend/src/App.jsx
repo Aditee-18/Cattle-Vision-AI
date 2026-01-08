@@ -37,7 +37,7 @@ function App() {
     try {
       // POST to Node.js (Port 5000)
       // Node.js will forward it to Python
-      const response = await axios.post('http://localhost:5000/analyze', formData);
+      const response = await axios.post('https://cattle-backend-uw82.onrender.com/analyze', formData);
       
       console.log("Response from Backend:", response.data);
       setResult(response.data);
