@@ -35,7 +35,7 @@ app.post('/analyze', upload.single('image'), async (req, res) => {
 
         // 2. Call the Python AI Service (running on port 8000)
         console.log("🚀 Sending to AI Brain...");
-        const aiResponse = await axios.post('http://127.0.0.1:8000/predict', formData, {
+        const aiResponse = await axios.post(`https://cattle-ai-brain.onrender.com/predict`, formData, {
             headers: {
                 ...formData.getHeaders()
             }
