@@ -1,0 +1,31 @@
+# Ignore System Files
+.DS_Store
+Thumbs.db
+
+# Ignore Python Junk
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Ignore Node Junk 
+node_modules/
+dist/
+build/
+coverage/
+
+# Ignore backend uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# --- Ignore Old Models ---
+ai-service/cattle_final_model.h5
+ai-service/efficientnet_cattle_v2.h5
+
+ai-service/testImages
+
+
+# --- Ignore Random Test Images ---
+ai-service/*.jpg
+ai-service/*.jpeg
+ai-service/*.png

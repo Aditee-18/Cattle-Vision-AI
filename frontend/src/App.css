@@ -1,0 +1,149 @@
+/* Deep Blue Gradient Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.header p {
+  color: #a0c4ff;
+  margin-bottom: 30px;
+}
+
+/* The Glass Card Scanner */
+.scanner-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: transform 0.3s ease;
+}
+
+.scanner-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image Preview Box */
+.image-preview-area {
+  width: 100%;
+  height: 250px;
+  border: 2px dashed #4facfe;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  position: relative;
+}
+
+.image-preview-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder-text {
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+/* Hidden File Input */
+#fileInput {
+  display: none;
+}
+
+/* Analyze Button */
+.analyze-btn {
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  border: none;
+  padding: 12px 40px;
+  border-radius: 30px;
+  color: #0f2027;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: opacity 0.3s;
+}
+
+.analyze-btn:disabled {
+  background: #555;
+  color: #888;
+  cursor: not-allowed;
+}
+
+/* Result Section */
+.result-box {
+  margin-top: 25px;
+  padding: 15px;
+  background: rgba(0, 255, 128, 0.1);
+  border: 1px solid #00ff88;
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.breed-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ff88;
+  margin: 0;
+}
+
+.confidence-bar-bg {
+  background: rgba(255, 255, 255, 0.2);
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.confidence-bar-fill {
+  background: #00ff88;
+  height: 100%;
+  transition: width 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Loading Spinner */
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
