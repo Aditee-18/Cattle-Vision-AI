@@ -16,8 +16,8 @@
 
 | Component | Status | URL |
 | :--- | :--- | :--- |
-| **Main Website** | 🟢 Live | **[https://cattle-frontend-bfp3.onrender.com/]** |
-| **AI Service (Wake Up)** | 🟡 Sleepy | **[https://cattle-ai-brain.onrender.com]** |
+| **Main Website** | 🟢 Live | **https://cattle-frontend-bfp3.onrender.com/** |
+| **AI Service (Wake Up)** | 🟡 Sleepy | **https://cattle-ai-brain.onrender.com** |
 
 ---
 
