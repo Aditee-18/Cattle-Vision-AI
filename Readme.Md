@@ -34,7 +34,8 @@ Unlike standard monolithic scripts, this project uses a decoupled architecture t
 
 ### **Computer Vision & AI**
 *   **Model:** EfficientNetB0 (Transfer Learning).
-*   **Frameworks:** TensorFlow, Keras, NumPy, Pillow.
+*   **Frameworks:** TensorFlow, Keras.
+*   **Librarries:** NumPy, Pillow.
 *   **Performance:** Achieved **97.45% Validation Accuracy** via fine-tuning the top 30 layers.
 *   **Data Engineering:** Custom scraping of 5,000+ images, manual cropping for "Horn Feature" extraction, and 20% Data Augmentation (Rotation, Zoom, Shear).
 
